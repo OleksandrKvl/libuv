@@ -150,7 +150,8 @@
         'test-udp-multicast-interface.c',
         'test-udp-multicast-interface6.c',
         'test-udp-try-send.c',
-        'test-not-writable-after-shutdown.c'
+        'test-not-writable-after-shutdown.c',
+        'test-not-readable-nor-writable-after-read-error.c'
       ],
       'conditions': [
         [ 'OS=="win"', {

@@ -288,7 +288,8 @@ test_run_tests_SOURCES = test/blackhole-server.c \
                          test/test-udp-try-send.c \
                          test/test-walk-handles.c \
                          test/test-watcher-cross-stop.c\
-                         test/test-note-writable-after-shutdown
+                         test/test-note-writable-after-shutdown\
+                         test/test-not-readable-nor-writable-after-read-error.c
 test_run_tests_LDADD = libuv.la
 
 if WINNT
