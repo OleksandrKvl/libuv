@@ -81,7 +81,7 @@ static void connect_cb(uv_connect_t *req, int status) {
   ASSERT(r == 0);
 }
 
-TEST_IMPL(not_readable_nor_writable_after_read_error) {
+TEST_IMPL(not_readable_nor_writable_on_read_error) {
   struct sockaddr_in sa;
   ASSERT(0 == uv_ip4_addr("127.0.0.1", TEST_PORT, &sa));
   ASSERT(0 == uv_loop_init(&loop));
