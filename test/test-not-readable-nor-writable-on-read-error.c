@@ -26,7 +26,7 @@ uv_loop_t loop;
 uv_tcp_t tcp_client;
 uv_connect_t connect_req;
 uv_write_t write_req;
-char *reset_me_cmd = "QSH";
+char reset_me_cmd[3] = {'Q', 'S', 'H'};
 
 static int connect_cb_called;
 static int read_cb_called;
